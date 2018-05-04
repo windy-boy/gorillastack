@@ -1,0 +1,807 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.topNav {
+    width: 100%;
+    height: 90px;
+    min-height: 90px;
+    background: url("img/pattern-1-1.png") repeat;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.topNav .topMain {
+    width: 88%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+}
+
+.topNav .topMain .mainLeft {
+    width: 200px;
+    height: 90px;
+    line-height: 90px;
+    position: absolute;
+    left: 0px;
+}
+
+.topNav .topMain .mainLeft img {
+    width: 100%;
+    height: 34.25px;
+}
+
+.topNav .topMain .mainLeft img:hover {
+    cursor: pointer;
+}
+
+.topNav .topMain .btn-nav {
+    width: 50px;
+    height: 45px;
+    line-height: 45px;
+    background-color: rgba(62, 91, 137, 0.79);
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.topNav .topMain .btn-nav:hover {
+    background-color: #78d2ff;
+}
+
+.topNav .topMain .mainRight {
+    width: 70%;
+    height: 100%;
+}
+
+.topNav .topMain .mainRight .tSection {
+    position: absolute;
+    right: 0;
+    list-style: none;
+}
+
+.topNav .topMain .mainRight .tSection .topSection {
+    height: 90px;
+    line-height: 90px;
+    float: left;
+}
+
+.topNav .topMain .mainRight .tSection .topSection a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.topNav .topMain .mainRight .tSection .topSection span {
+    color: #fff;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:last-child a {
+    color: darkorange;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(1) {
+    width: 187.78px;
+    text-align: center;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(1) .list {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 0px;
+    border: none;
+    display: none;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(1) .list .list-group-item {
+    background-color: #383f5d;
+    padding: 10px 0;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(1) .list .list-item {
+    float: none;
+    border: none;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(1) .list .list-item .lsa {
+    display: block;
+    width: 250px;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: none;
+    border-left: none;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(1) .list .list-item:hover .lsa {
+    color: darkorange;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(1):hover .list {
+    display: block;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(2) {
+    width: 214.56px;
+    text-align: center;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(3) {
+    width: 93.77px;
+    text-align: center;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(4) {
+    width: 76.31px;
+    text-align: center;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(5) {
+    width: 77.73px;
+    text-align: center;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:nth-child(6) {
+    width: 100.56px;
+    text-align: center;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:hover .sect {
+    color: darkorange;
+    cursor: pointer;
+    border-bottom: 2px solid darkorange;
+}
+
+.topNav .topMain .mainRight .tSection .topSection:hover .sect span {
+    color: darkorange;
+}
+
+.topNav .topMain .row {
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    display: none;
+    margin: auto;
+}
+
+.topNav .topMain .row .col {
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.topNav .topMain .row .col .rowA {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.topNav .topMain .row .col:hover {
+    border-color: darkorange;
+    cursor: pointer;
+}
+
+.topNav .topMain .row .col:hover .rowA {
+    color: darkorange;
+}
+
+.topNav .topMain .row .col:hover span {
+    display: block;
+}
+
+.topNav .topMain .row .col:first-child {
+    border-color: darkorange;
+    position: relative;
+}
+
+.topNav .topMain .row .col:first-child .glyphicon {
+    color: darkorange;
+    width: 10%;
+    padding: 0 5px;
+}
+
+.topNav .topMain .row .col:first-child .list1 {
+    display: none;
+    width: 90%;
+    position: absolute;
+    right: 0;
+    border: none;
+}
+
+.topNav .topMain .row .col:first-child .list1 .list-group-item {
+    background-color: rgba(62, 91, 137, 0);
+    height: 44px;
+    line-height: 44px;
+    padding: 0;
+    margin: 10px 0;
+    border: 1px solid #fff;
+}
+
+.topNav .topMain .row .col:first-child .list1 .list-group-item .lsa1 {
+    color: #fff;
+}
+
+.topNav .topMain .row .col:first-child .list1 .list-group-item:hover {
+    border-color: darkorange;
+}
+
+.topNav .topMain .row .col:first-child .list1 .list-group-item:hover .lsa1 {
+    color: darkorange;
+}
+
+.topNav .topMain .row .col:first-child span {
+    display: block;
+    width: 10px;
+    height: 44px;
+    line-height: 44px;
+    float: right;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.topNav .topMain .row .col:last-child {
+    border: 1px solid darkorange;
+}
+
+.topNav .topMain .row .col:last-child .rowA {
+    color: darkorange;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+}
+
+.main .section1 {
+    width: 100%;
+    height: 100%;
+    background: url("img/pattern-1-1.png") repeat;
+}
+
+.main .section1 .column {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.main .section1 .column .column1 {
+    width: 100%;
+    height: 80%;
+    margin: 0;
+}
+
+.main .section1 .column .column1 h2 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.main .section1 .column .column1 h2 strong {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.main .section1 .column .column1 h4 {
+    text-align: center;
+    color: #fff;
+    fonts-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.main .section1 .column .column1 .x-btn {
+    display: inline-block;
+    width: 144px;
+    height: 52px;
+    background-color: #ff865e;
+    color: #fff;
+    text-align: center;
+    line-height: 52px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.main .section1 .column .column2 {
+    width: 100%;
+    height: 20%;
+    margin: 0;
+}
+
+.main .section1 .column .column2 .botNav {
+    width: 100%;
+    height: auto;
+}
+
+.main .section1 .column .column2 .botNav .firstImg {
+    display: inline-block;
+    width: 16.8%;
+    height: auto;
+    text-align: center;
+}
+
+.main .section1 .column .column2 .botNav .firstImg img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
+.main .section2 {
+    width: 100%;
+    height: auto;
+}
+
+.main .section2 .s-cantainer {
+    width: 88%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main .section2 .s-cantainer .s-column {
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin-right: 3%;
+    float: left;
+}
+
+.main .section2 .s-cantainer .s-column img {
+    margin-bottom: 24px;
+}
+
+.main .section2 .s-cantainer .s-column .s-text {
+    font-size: 16px;
+    color: #000;
+}
+
+.main .section2 .s-cantainer .x-column {
+    width: 100%;
+    height: auto;
+}
+
+.main .section2 .s-cantainer .x-column .fenge {
+    border-top: 2px solid #e5e5e5;
+    height: 0;
+    margin: 1.5em 0;
+}
+
+.main .section2 .s-cantainer .x-column .c-content {
+    max-width: 1200px;
+    width: 88%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main .section2 .s-cantainer .x-column .c-content .section3 {
+    width: 100%;
+    height: auto;
+}
+
+.main .section2 .s-cantainer .x-column .c-content .section3 .x-container {
+    width: 100%;
+    height: auto;
+}
+
+.main .section2 .s-cantainer .x-column .c-content .section3 .x-container .x-column {
+    width: 100%;
+    text-align: center;
+}
+
+.main .section2 .s-cantainer .x-column .c-content .section3 .x-container .x-left {
+    width: 48%;
+    float: left;
+}
+
+.main .section2 .s-cantainer .x-column .c-content .section3 .x-container .x-left .media-object {
+    width: 60px;
+    height: 60px;
+}
+
+.main .section2 .s-cantainer .x-column .c-content .section3 .x-container .x-right {
+    width: 48%;
+    float: right;
+}
+
+.main .section2 .s-cantainer .x-column .c-content .section3 .x-container .x-right .media-object {
+    width: 60px;
+    height: 60px;
+}
+
+.main .section2 .s-cantainer .x-column .c-content .section3 .x-container .drak {
+    color: rgba(251, 122, 79, 0.79);
+}
+
+.main .section2 .s-cantainer .x-column .c-content .section3 .x-container .media-body {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.main .section2 .s-cantainer .x-column .c-content .section3 .x-container .media-body h4 {
+    line-height: 1.8;
+    font-weight: 700 !important;
+    color: rgba(49, 63, 120, 0.79);
+}
+
+.main .section4 {
+    width: 100%;
+    height: 100%;
+}
+
+.main .section4 .x-container {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.main .section5 {
+    width: 100%;
+    height: 100%;
+}
+
+.main .section5 .set5 {
+    width: 88%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main .section5 .set5 .setLeft {
+    float: left;
+    width: 48%;
+    height: auto;
+    margin-right: 1%;
+}
+
+.main .section5 .set5 .setLeft .ul-list {
+    list-style: none;
+}
+
+.main .section5 .set5 .setLeft .ul-list .li-list {
+    margin-bottom: 5%;
+}
+
+.main .section5 .set5 .setLeft .ul-list .li-list .box-img {
+    float: left;
+    width: 4%;
+    height: auto;
+}
+
+.main .section5 .set5 .setLeft .ul-list .li-list .box-img img {
+    width: 100%;
+    height: auto;
+}
+
+.main .section5 .set5 .setLeft .ul-list .li-list .box-content {
+    margin-left: 6%;
+}
+
+.main .section5 .set5 .setRight {
+    width: 48%;
+    height: auto;
+    float: right;
+    text-align: center;
+}
+
+.main .section5 .set5 .setRight img {
+    width: 85%;
+    height: 85%;
+    margin-top: 10%;
+}
+
+.main .section6 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.main .section6 .x-container {
+    overflow: hidden;
+    width: 88%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main .section6 .x-container .x-cloumn1 {
+    width: 100%;
+    height: 49px;
+    padding: 10px 0;
+}
+
+.main .section6 .x-container .x-cloumn1 .x-hr {
+    border-top: 1px solid #e5e5e5;
+}
+
+.main .section6 .x-container .x-cloumn2 {
+    width: 100%;
+    height: auto;
+}
+
+.main .section6 .x-container .x-cloumn2 .xc-left {
+    width: 60%;
+    float: left;
+    margin-right: 10%;
+}
+
+.main .section6 .x-container .x-cloumn2 .xc-left .x-text {
+    font-size: 24px;
+    font-family: "Lato", sans-serif;
+}
+
+.main .section6 .x-container .x-cloumn2 .xc-right {
+    width: 30%;
+    float: left;
+    text-align: center !important;
+}
+
+.main .section6 .x-container .x-cloumn2 .xc-right .xcr-a {
+    display: inline-block;
+    width: 144px;
+    height: 52px;
+    line-height: 52px;
+    background-color: rgba(255, 134, 94, 0.79);
+    color: #fff;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    background-color: #313f78;
+}
+
+.footer .f-container {
+    margin: 88%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer .f-container .f-global {
+    width: 88%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer .f-container .f-global ul {
+    text-align: center;
+    width: 100%;
+    height: 54px;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.footer .f-container .f-global ul li {
+    text-align: center;
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+}
+
+.footer .f-container .f-global ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer .f-container .f-global ul li a:hover {
+    text-decoration: none;
+}
+
+.footer .f-container .f-global ul li:hover {
+    background-color: #2aabd2;
+}
+
+.footer .f-container .f-menu {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer .f-container .f-menu .f-nav {
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+}
+
+.footer .f-container .f-menu .f-nav li {
+    display: inline-block;
+}
+
+.footer .f-container .f-menu .f-nav li a, .footer .f-container .f-menu .f-nav li span {
+    color: #fff;
+}
+
+.footer .f-container .f-menu .f-nav li a:hover {
+    text-decoration: none;
+    color: #ccc;
+    opacity: 0.5;
+}
+
+.footer .f-container .f-menu .f-nav li span {
+    margin: 0 10px;
+}
+
+.footer .f-container .f-content {
+    width: 100%;
+    text-align: center;
+}
+
+.footer .f-container .f-content ul {
+    list-style: none;
+}
+
+.footer .f-container .f-content ul li {
+    display: inline-block;
+    color: #fff;
+}
+
+.footer .f-container .f-content .fc-img {
+    text-align: center;
+}
+
+.footer .f-container .f-content .fc-img img {
+    width: 150px;
+    height: 63px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer .f-container .f-content .fcb-img {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer .f-container .f-content .fcb-img img {
+    width: 110px;
+    height: 32px;
+}
+
+.footer .f-container .f-content .fcb-img img:hover {
+    cursor: pointer;
+}
+
+.btnCircle {
+    position: fixed;
+    right: 10px;
+    bottom: -100%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.btnCircle a {
+    color: #000;
+    text-decoration: none;
+}
+
+.btnCircle:hover {
+    opacity: 1;
+}
+
+@media (max-width: 1080px) {
+    .mainRight {
+        display: none;
+    }
+
+    .btn-nav {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1081px) {
+    .col {
+        display: none;
+    }
+
+    .topNav {
+        height: 90px !important;
+    }
+}
+
+@media (max-width: 770px) {
+    .botNav .firstImg {
+        width: 100% !important;
+        display: block !important;
+        margin-bottom: 20px !important;
+    }
+
+    .section2 .s-column {
+        width: 100% !important;
+        float: none !important;
+    }
+
+    .section2 .x-left, .section2 .x-right {
+        float: none !important;
+        width: 100% !important;
+    }
+
+    .section2 .x-left .media-object, .section2 .x-right .media-object {
+        width: 360px !important;
+        height: 360px !important;
+    }
+
+    .section5 .set5 .setLeft {
+        width: 100% !important;
+        height: auto;
+        float: none !important;
+    }
+
+    .section5 .set5 .setLeft .box-img {
+        width: 100% !important;
+        height: 100% !important;
+        display: block;
+    }
+
+    .section5 .set5 .setLeft .box-img .boImg {
+        width: 100% !important;
+        height: 100% !important;
+        display: block;
+    }
+
+    .section5 .set5 .setLeft .box {
+        display: block;
+    }
+
+    .section5 .set5 .setRight {
+        width: 100% !important;
+        height: auto;
+        float: none !important;
+    }
+
+    .section5 .set5 .setRight img {
+        display: block;
+    }
+
+    .section6 .xc-left {
+        float: none;
+        width: 100% !important;
+    }
+
+    .section6 .xc-right {
+        float: none;
+        margin-top: 30px;
+        width: 100% !important;
+    }
+
+    .medi-top {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .medi-top img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+/*# sourceMappingURL=index.css.map */
